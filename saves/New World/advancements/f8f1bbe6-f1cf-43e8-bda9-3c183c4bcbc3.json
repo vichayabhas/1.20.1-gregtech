@@ -17,6 +17,18 @@
     },
     "done": true
   },
+  "gttruesteam:root": {
+    "criteria": {
+      "tick": "2026-08-04 22:43:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2026-08-04 22:49:26 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/cherry_boat": {
     "criteria": {
       "in_water": "2026-08-04 22:51:03 +0700"
@@ -53,21 +65,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/brewing/cauldron": {
-    "criteria": {
-      "has_water_bucket": "2026-08-04 22:49:26 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2026-08-04 22:51:03 +0700"
-    },
-    "done": true
-  },
-  "gttruesteam:root": {
-    "criteria": {
-      "tick": "2026-08-04 22:43:28 +0700"
     },
     "done": true
   },
@@ -80,6 +80,12 @@
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "in_water": "2026-08-04 22:51:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-08-05 10:24:17 +0700"
     },
     "done": true
   },
