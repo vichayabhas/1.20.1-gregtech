@@ -1,7 +1,10 @@
 {
 	"favorites": [
 		"{mode:\"NOON\",type:\"roughlyenoughitems:time\"}",
-		"{type:\"roughlyenoughitems:weather\",weather:\"CLEAR\"}"
+		"{type:\"roughlyenoughitems:weather\",weather:\"CLEAR\"}",
+		"{mode:\"CREATIVE\",type:\"roughlyenoughitems:gamemode\"}",
+		"{mode:\"SURVIVAL\",type:\"roughlyenoughitems:gamemode\"}",
+		"{data:{Count:1b,id:\"gtceu:terminal\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
 	],
 	"hiddenFavorites": [],
 	"displays": []

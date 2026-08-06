@@ -1,21 +1,21 @@
-[10:05:23] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[10:05:23] [INIT] Loaded plugins:
-[10:05:23] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[10:05:23] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[10:05:23] [INIT] - site.siredvin.gttruesteam.integrations.kubejs.Plugin
-[10:05:23] [INIT] - argent_matter.gcyr.integration.kjs.GCYRKubeJSPlugin
-[10:05:23] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[10:05:23] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[10:05:23] [INIT] - com.probejs.ProbeJSPlugin
-[10:05:23] [INIT] - com.gtceuterminal.integration.kjs.TerminalKubeJSPlugin
-[10:05:23] [INFO] example.js#5: Hello, World! (Loaded server scripts)
-[10:05:23] [INFO] Loaded script server_scripts:example.js in 0.025 s
-[10:05:23] [INFO] Loaded 1/1 KubeJS server scripts in 0.035 s with 0 errors and 0 warnings
-[10:05:23] [INFO] Scripts loaded
-[10:05:23] [INFO] Initializing recipe event...
-[10:05:25] [INFO] Processing recipes...
-[10:05:27] [INFO] Found 50492 recipes in 1.740 s
-[10:05:27] [INFO] Posted recipe events in 37.82 ms
-[10:05:27] [WARN] Error parsing recipe gtceu:shapeless/centrifuged_ore_to_dust_neutronium[minecraft:crafting_shapeless]: {"type":"minecraft:crafting_shapeless","ingredients":[{"tag":"gtceu:tools/crafting_hammers"},[]],"result":{"item":"gtceu:neutronium_mixture_dust"}}: Item array cannot be empty, at least one item must be defined
-[10:05:29] [INFO] Added 1 recipes, removed 5 recipes, modified 2 recipes, with 1 failed recipes in 2.131 s
-[10:05:31] [INFO] Server resource reload complete!
+[09:31:34] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[09:31:34] [INIT] Loaded plugins:
+[09:31:34] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[09:31:34] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[09:31:34] [INIT] - site.siredvin.gttruesteam.integrations.kubejs.Plugin
+[09:31:34] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[09:31:34] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[09:31:34] [INIT] - com.gtceuterminal.integration.kjs.TerminalKubeJSPlugin
+[09:31:34] [INIT] - argent_matter.gcyr.integration.kjs.GCYRKubeJSPlugin
+[09:31:34] [INIT] - com.probejs.ProbeJSPlugin
+[09:31:34] [INFO] example.js#5: Hello, World! (Loaded server scripts)
+[09:31:34] [INFO] Loaded script server_scripts:example.js in 0.016 s
+[09:31:34] [INFO] Loaded 1/1 KubeJS server scripts in 0.026 s with 0 errors and 0 warnings
+[09:31:34] [INFO] Scripts loaded
+[09:31:34] [INFO] Initializing recipe event...
+[09:31:36] [INFO] Processing recipes...
+[09:31:38] [INFO] Found 57388 recipes in 1.379 s
+[09:31:38] [INFO] Posted recipe events in 31.22 ms
+[09:31:38] [WARN] Error parsing recipe gtceu:shapeless/centrifuged_ore_to_dust_neutronium[minecraft:crafting_shapeless]: {"type":"minecraft:crafting_shapeless","ingredients":[{"tag":"gtceu:tools/crafting_hammers"},[]],"result":{"item":"gtceu:neutronium_mixture_dust"}}: Item array cannot be empty, at least one item must be defined
+[09:31:40] [INFO] Added 1 recipes, removed 5 recipes, modified 2 recipes, with 1 failed recipes in 2.243 s
+[09:31:43] [INFO] Server resource reload complete!
