@@ -23,18 +23,28 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| unlockCapeFor | UUID, ResourceLocation |  | void | ✘ |
 | registerFreeCape | ResourceLocation, ResourceLocation |  | void | ✘ |
 | registerCape | ResourceLocation, ResourceLocation |  | void | ✘ |
-| unlockCapeFor | UUID, ResourceLocation |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
 | cancel |  |  | Object | ✘ |
-| success | Object |  | Object | ✘ |
 | success |  |  | Object | ✘ |
+| success | Object |  | Object | ✘ |
 
 
 ### Documented members:
+
+- `void unlockCapeFor(UUID owner, ResourceLocation capeId)`
+
+  Parameters:
+  - owner: UUID- The UUID of the player to give the cape to.
+  - capeId: ResourceLocation- The cape to give
+
+```
+Automatically makes a cape available to a player.
+```
 
 - `void registerFreeCape(ResourceLocation id, ResourceLocation texture)`
 
@@ -54,16 +64,6 @@ Registers a cape that will always be unlocked for all players.
 
 ```
 Registers a cape.
-```
-
-- `void unlockCapeFor(UUID owner, ResourceLocation capeId)`
-
-  Parameters:
-  - owner: UUID- The UUID of the player to give the cape to.
-  - capeId: ResourceLocation- The cape to give
-
-```
-Automatically makes a cape available to a player.
 ```
 
 - `Object exit(Object var0)`
@@ -102,6 +102,13 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 `cancel` denotes a `false` outcome.
 ```
 
+- `Object success()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
+
+`success` denotes a `true` outcome.
+```
+
 - `Object success(Object var0)`
 
   Parameters:
@@ -109,13 +116,6 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 
 ```
 Stops the event with the given exit value. Execution will be stopped **immediately**.
-
-`success` denotes a `true` outcome.
-```
-
-- `Object success()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
 ```

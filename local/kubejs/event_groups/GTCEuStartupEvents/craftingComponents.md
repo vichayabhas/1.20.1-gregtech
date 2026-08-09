@@ -19,27 +19,27 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| setTags | CraftingComponent, Map<Object, Object> |  | void | ✘ |
 | createTag | String, ResourceLocation |  | ComponentWrapper | ✘ |
 | set | CraftingComponent, Map<Object, Object> |  | void | ✘ |
 | setTag | CraftingComponent, int, ResourceLocation |  | void | ✘ |
-| setItem | CraftingComponent, int, ItemStack |  | void | ✘ |
-| setTags | CraftingComponent, Map<Object, Object> |  | void | ✘ |
-| setItems | CraftingComponent, Map<Object, Object> |  | void | ✘ |
 | createItem | String, ItemStack |  | ComponentWrapper | ✘ |
 | setMaterialEntry | CraftingComponent, int, MaterialEntry |  | void | ✘ |
-| setMaterialEntries | CraftingComponent, Map<Object, Object> |  | void | ✘ |
-| setFallbackItem | CraftingComponent, ItemStack |  | void | ✘ |
 | setFallbackTag | CraftingComponent, ResourceLocation |  | void | ✘ |
-| removeTier | CraftingComponent, int |  | void | ✘ |
+| setFallbackItem | CraftingComponent, ItemStack |  | void | ✘ |
 | removeTiers | CraftingComponent, int[] |  | void | ✘ |
-| setFallbackMaterialEntry | CraftingComponent, MaterialEntry |  | void | ✘ |
+| removeTier | CraftingComponent, int |  | void | ✘ |
+| setMaterialEntries | CraftingComponent, Map<Object, Object> |  | void | ✘ |
+| setItem | CraftingComponent, int, ItemStack |  | void | ✘ |
+| setItems | CraftingComponent, Map<Object, Object> |  | void | ✘ |
 | createMaterialEntry | String, MaterialEntry |  | ComponentWrapper | ✘ |
+| setFallbackMaterialEntry | CraftingComponent, MaterialEntry |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
 | cancel |  |  | Object | ✘ |
-| success | Object |  | Object | ✘ |
 | success |  |  | Object | ✘ |
+| success | Object |  | Object | ✘ |
 
 
 ### Documented members:
@@ -80,6 +80,13 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 `cancel` denotes a `false` outcome.
 ```
 
+- `Object success()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
+
+`success` denotes a `true` outcome.
+```
+
 - `Object success(Object var0)`
 
   Parameters:
@@ -87,13 +94,6 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 
 ```
 Stops the event with the given exit value. Execution will be stopped **immediately**.
-
-`success` denotes a `true` outcome.
-```
-
-- `Object success()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
 ```

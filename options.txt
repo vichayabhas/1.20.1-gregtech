@@ -75,7 +75,7 @@ glDebugVerbosity:1
 skipMultiplayerWarning:false
 skipRealms32bitWarning:false
 hideMatchedNames:true
-joinedFirstServer:false
+joinedFirstServer:true
 hideBundleTutorial:false
 syncChunkWrites:true
 showAutosaveIndicator:true
@@ -133,6 +133,8 @@ key_key.ponder.ponder:key.keyboard.w
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_create.keyinfo.rotate_menu:key.keyboard.unknown
+key_framedblocks.key.update_cull:key.keyboard.f9
+key_framedblocks.key.wipe_cache:key.keyboard.unknown
 key_key.buildinggadgets2.settings_menu:key.keyboard.1
 key_key.buildinggadgets2.undo:key.keyboard.u
 key_key.buildinggadgets2.anchor:key.keyboard.2
@@ -146,7 +148,7 @@ key_gtceu.key.armor_charging:key.keyboard.n
 key_gtceu.key.armor_hover:key.keyboard.h
 soundCategory_master:1.0
 soundCategory_music:0.0
-soundCategory_record:1.0
+soundCategory_record:0.3855633802816901
 soundCategory_weather:1.0
 soundCategory_block:1.0
 soundCategory_hostile:1.0

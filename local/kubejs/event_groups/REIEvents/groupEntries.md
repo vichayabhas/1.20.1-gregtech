@@ -21,22 +21,22 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | groupEntries | ResourceLocation, Component, ResourceLocation, Object |  | void | ✘ |
+| groupItemsIf | ResourceLocation, Component, Predicate<ItemStack> |  | void | ✘ |
+| groupSameItem | ResourceLocation, Component, ItemStack |  | void | ✘ |
+| groupSameFluid | ResourceLocation, Component, FluidStackJS |  | void | ✘ |
 | groupItems | ResourceLocation, Component, Ingredient |  | void | ✘ |
 | groupFluids | ResourceLocation, Component, FluidStackJS[] |  | void | ✘ |
 | groupItemsByTag | ResourceLocation, Component, ResourceLocation |  | void | ✘ |
-| groupEntriesIf | ResourceLocation, Component, ResourceLocation, Predicate |  | void | ✘ |
 | groupFluidsIf | ResourceLocation, Component, Predicate<FluidStackJS> |  | void | ✘ |
-| groupSameItem | ResourceLocation, Component, ItemStack |  | void | ✘ |
-| groupItemsIf | ResourceLocation, Component, Predicate<ItemStack> |  | void | ✘ |
 | groupAnyIf | ResourceLocation, Component, Predicate<EntryStack<?>> |  | void | ✘ |
-| groupSameFluid | ResourceLocation, Component, FluidStackJS |  | void | ✘ |
 | groupFluidsByTag | ResourceLocation, Component, ResourceLocation |  | void | ✘ |
+| groupEntriesIf | ResourceLocation, Component, ResourceLocation, Predicate |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
 | cancel |  |  | Object | ✘ |
-| success | Object |  | Object | ✘ |
 | success |  |  | Object | ✘ |
+| success | Object |  | Object | ✘ |
 
 
 ### Documented members:
@@ -77,6 +77,13 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 `cancel` denotes a `false` outcome.
 ```
 
+- `Object success()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
+
+`success` denotes a `true` outcome.
+```
+
 - `Object success(Object var0)`
 
   Parameters:
@@ -84,13 +91,6 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 
 ```
 Stops the event with the given exit value. Execution will be stopped **immediately**.
-
-`success` denotes a `true` outcome.
-```
-
-- `Object success()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
 ```

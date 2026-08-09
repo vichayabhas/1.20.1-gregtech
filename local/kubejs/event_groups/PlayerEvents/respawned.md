@@ -25,12 +25,12 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getEntity |  |  | Entity | ✘ |
 | getOldPlayer |  |  | ServerPlayer | ✘ |
 | getKeepData |  |  | boolean | ✘ |
-| removeGameStage | String |  | void | ✘ |
+| getEntity |  |  | Entity | ✘ |
 | addGameStage | String |  | void | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
+| removeGameStage | String |  | void | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -38,16 +38,11 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
 | cancel |  |  | Object | ✘ |
-| success | Object |  | Object | ✘ |
 | success |  |  | Object | ✘ |
+| success | Object |  | Object | ✘ |
 
 
 ### Documented members:
-
-- `Entity getEntity()`
-```
-Gets the player that respawned.
-```
 
 - `ServerPlayer getOldPlayer()`
 ```
@@ -59,13 +54,9 @@ Gets the player that was before respawn. Note that this entity is already remove
 Gets whether the player's data was kept, e.g. when returning from the end.
 ```
 
-- `void removeGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
+- `Entity getEntity()`
 ```
-Removes the specified game stage from the player
+Gets the player that respawned.
 ```
 
 - `void addGameStage(String var0)`
@@ -84,6 +75,15 @@ Adds the specified game stage to the player
 
 ```
 Checks if the player has the specified game stage
+```
+
+- `void removeGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Removes the specified game stage from the player
 ```
 
 - `Object exit(Object var0)`
@@ -122,6 +122,13 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 `cancel` denotes a `false` outcome.
 ```
 
+- `Object success()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
+
+`success` denotes a `true` outcome.
+```
+
 - `Object success(Object var0)`
 
   Parameters:
@@ -129,13 +136,6 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 
 ```
 Stops the event with the given exit value. Execution will be stopped **immediately**.
-
-`success` denotes a `true` outcome.
-```
-
-- `Object success()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
 ```

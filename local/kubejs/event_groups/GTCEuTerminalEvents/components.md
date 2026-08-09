@@ -21,21 +21,21 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | addComponent | String, String, String, int |  | void | ✘ |
 | addComponent | String, String, String, int, Map<String, String> |  | void | ✘ |
-| addCoil | String, String, int, int |  | void | ✘ |
-| addEnergyHatch | String, String, String, String, int |  | void | ✘ |
-| addFluidHatch | String, String, String, String, int |  | void | ✘ |
-| addLaserHatch | String, String, String, String, int |  | void | ✘ |
 | addBus | String, String, String, int |  | void | ✘ |
+| addEnergyHatch | String, String, String, String, int |  | void | ✘ |
 | addMufflerHatch | String, String, int |  | void | ✘ |
 | addWirelessHatch | String, String, String, String, int |  | void | ✘ |
-| addDualHatch | String, String, String, int |  | void | ✘ |
+| addFluidHatch | String, String, String, String, int |  | void | ✘ |
+| addCoil | String, String, int, int |  | void | ✘ |
+| addLaserHatch | String, String, String, String, int |  | void | ✘ |
 | addGroup | String, String, int, String, String, boolean |  | void | ✘ |
+| addDualHatch | String, String, String, int |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
 | cancel |  |  | Object | ✘ |
-| success | Object |  | Object | ✘ |
 | success |  |  | Object | ✘ |
+| success | Object |  | Object | ✘ |
 
 
 ### Documented members:
@@ -76,6 +76,13 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 `cancel` denotes a `false` outcome.
 ```
 
+- `Object success()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
+
+`success` denotes a `true` outcome.
+```
+
 - `Object success(Object var0)`
 
   Parameters:
@@ -83,13 +90,6 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 
 ```
 Stops the event with the given exit value. Execution will be stopped **immediately**.
-
-`success` denotes a `true` outcome.
-```
-
-- `Object success()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
 ```
