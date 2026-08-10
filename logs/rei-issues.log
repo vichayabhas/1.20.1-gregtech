@@ -1,4 +1,4 @@
-[14:21:15] [REI-ReloadPlugins/ERROR] [REI] JEI Plugin [CreateAdditionJEI:createaddition:jei_plugin] of REI Plugin Compatibilities Adapter [rei_plugin_compatibilities, jei] plugin failed to reloadable-plugin/DisplayRegistryImpl/!
+[21:57:43] [REI-ReloadPlugins/ERROR] [REI] JEI Plugin [CreateAdditionJEI:createaddition:jei_plugin] of REI Plugin Compatibilities Adapter [rei_plugin_compatibilities, jei] plugin failed to reloadable-plugin/DisplayRegistryImpl/!
 java.lang.NoSuchMethodError: 'java.util.Optional mezz.jei.api.helpers.IJeiHelpers.getRecipeType(net.minecraft.resources.ResourceLocation, java.lang.Class)'
 	at TRANSFORMER/createaddition@1.20.1-1.3.3/com.mrh0.createaddition.compat.jei.CreateAdditionJEI.registerRecipeCatalysts(CreateAdditionJEI.java:92)
 	at TRANSFORMER/rei_plugin_compatibilities@12.0.93/me.shedaniel.rei.jeicompat.JEIPluginDetector$JEIPluginWrapper.registerDisplays(JEIPluginDetector.java:563)
