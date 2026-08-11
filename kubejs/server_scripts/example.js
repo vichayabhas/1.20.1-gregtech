@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
         .itemOutputs(Item.of('gtceu:gallium_sulfide_dust', 38))
         .outputFluids(Fluid.of('gtceu:fluorine', 32000))
         .outputFluids(Fluid.of('water', 100000))
-        .outputFluids(Fluid.of('gtceu:oxygen', 41000))
+        .outputFluids(Fluid.of('gtceu:oxygen', 44000))
         .outputFluids(Fluid.of('gtceu:sulfuric_acid', 86500))
         .outputFluids(Fluid.of('gtceu:hexafluoride_enriched_naquadah_solution', 2000))
         .EUt(5)
@@ -47,8 +47,8 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu
         .centrifuge("separate")
         .itemInputs(Item.of('kubejs:token', 3))
-        .itemOutputs("87x gtceu:naquadah_dust")
-        .itemOutputs("39x gtceu:rutile_dust")
+        .itemOutputs("522x gtceu:naquadah_dust")
+        .itemOutputs("105x gtceu:rutile_dust")
         .outputFluids(Fluid.of('gtceu:liquid_helium', 181500))
         .duration(2400).itemOutputs(Item.of('gtnn:palladium_on_carbon_catalyst', 6))
         .EUt(32768);

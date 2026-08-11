@@ -27,7 +27,6 @@
 		"{data:{Count:1b,id:\"gtceu:caesium_dust\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
 		"{data:{Amount:1000,FluidName:\"gtceu:enriched_naquadah_solution\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
 		"{data:{Amount:1000,FluidName:\"gtceu:enriched_naquadah_residue_solution\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
-		"{data:{Amount:1000,FluidName:\"gtceu:xenon\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
 		"{data:{Amount:1000,FluidName:\"gtceu:hexafluoride_enriched_naquadah_solution\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
 		"{data:{Amount:1000,FluidName:\"gtceu:oxygen\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
 		"{data:{Count:1b,id:\"gtceu:gallium_sulfide_dust\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
@@ -35,7 +34,13 @@
 		"{data:{Amount:1000,FluidName:\"gtceu:hydrofluoric_acid\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
 		"{data:{Count:1b,id:\"gtceu:lv_buffer\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
 		"{data:{Amount:1000,FluidName:\"gtceu:impure_naquadria_solution\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
-		"{data:{Amount:1000,FluidName:\"gtceu:impure_enriched_naquadah_solution\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}"
+		"{data:{Amount:1000,FluidName:\"gtceu:impure_enriched_naquadah_solution\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{Amount:1000,FluidName:\"gtceu:bromine\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{Amount:1000,FluidName:\"gtceu:chlorine\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{Amount:1000,FluidName:\"gtceu:bromine_trifluoride\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{Count:1b,id:\"gtceu:zinc_dust\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{Count:1b,id:\"gtceu:magnesium_dust\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{Amount:1000,FluidName:\"gtceu:xenon\",type:\"minecraft:fluid\"},type:\"roughlyenoughitems:entry_stack\"}"
 	],
 	"hiddenFavorites": [],
 	"displays": []
