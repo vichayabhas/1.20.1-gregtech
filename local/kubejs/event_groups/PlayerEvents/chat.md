@@ -26,15 +26,15 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| setComponent | Component |  | void | ✘ |
 | getMessage |  |  | String | ✘ |
 | setMessage | Component |  | void | ✘ |
-| getUsername |  |  | String | ✘ |
+| getEntity |  |  | Player | ✘ |
 | getComponent |  |  | Component | ✘ |
-| getEntity |  |  | LivingEntity | ✘ |
+| getUsername |  |  | String | ✘ |
+| setComponent | Component |  | void | ✘ |
+| removeGameStage | String |  | void | ✘ |
 | addGameStage | String |  | void | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
-| removeGameStage | String |  | void | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -42,20 +42,11 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
 | cancel |  |  | Object | ✘ |
-| success |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |
+| success |  |  | Object | ✘ |
 
 
 ### Documented members:
-
-- `void setComponent(Component var0)`
-
-  Parameters:
-  - var0: Component
-
-```
-Sets the message that the player sent.
-```
 
 - `String getMessage()`
 ```
@@ -71,9 +62,9 @@ Gets the message that the player sent.
 Sets the message that the player sent.
 ```
 
-- `String getUsername()`
+- `Player getEntity()`
 ```
-Gets the username of the player that sent the message.
+Gets the player that sent the message.
 ```
 
 - `Component getComponent()`
@@ -81,9 +72,27 @@ Gets the username of the player that sent the message.
 Gets the message that the player sent.
 ```
 
-- `LivingEntity getEntity()`
+- `String getUsername()`
 ```
-Gets the player that sent the message.
+Gets the username of the player that sent the message.
+```
+
+- `void setComponent(Component var0)`
+
+  Parameters:
+  - var0: Component
+
+```
+Sets the message that the player sent.
+```
+
+- `void removeGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Removes the specified game stage from the player
 ```
 
 - `void addGameStage(String var0)`
@@ -102,15 +111,6 @@ Adds the specified game stage to the player
 
 ```
 Checks if the player has the specified game stage
-```
-
-- `void removeGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Removes the specified game stage from the player
 ```
 
 - `Object exit(Object var0)`
@@ -149,13 +149,6 @@ Cancels the event with default exit value. Execution will be stopped **immediate
 `cancel` denotes a `false` outcome.
 ```
 
-- `Object success()`
-```
-Stops the event with default exit value. Execution will be stopped **immediately**.
-
-`success` denotes a `true` outcome.
-```
-
 - `Object success(Object var0)`
 
   Parameters:
@@ -163,6 +156,13 @@ Stops the event with default exit value. Execution will be stopped **immediately
 
 ```
 Stops the event with the given exit value. Execution will be stopped **immediately**.
+
+`success` denotes a `true` outcome.
+```
+
+- `Object success()`
+```
+Stops the event with default exit value. Execution will be stopped **immediately**.
 
 `success` denotes a `true` outcome.
 ```

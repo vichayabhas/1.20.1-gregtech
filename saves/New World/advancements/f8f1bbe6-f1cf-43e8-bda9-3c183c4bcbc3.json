@@ -2112,5 +2112,53 @@
     },
     "done": true
   },
+  "ae2:recipes/misc/network/parts/storage_bus": {
+    "criteria": {
+      "has_interface": "2026-08-13 14:50:26 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/blocks/interfaces_interface_part": {
+    "criteria": {
+      "has_interface": "2026-08-13 14:50:26 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/blocks/io_port": {
+    "criteria": {
+      "has_drive": "2026-08-13 14:50:45 +0700"
+    },
+    "done": true
+  },
+  "ae2:main/portable_cell": {
+    "criteria": {
+      "pc_1k": "2026-08-13 14:51:00 +0700"
+    },
+    "done": true
+  },
+  "ae2:main/charger": {
+    "criteria": {
+      "certus": "2026-08-13 14:51:18 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/parts/energy_acceptor": {
+    "criteria": {
+      "has_energy_acceptor": "2026-08-13 14:52:14 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/blocks/energy_vibration_chamber": {
+    "criteria": {
+      "has_energy_acceptor": "2026-08-13 14:52:14 +0700"
+    },
+    "done": true
+  },
+  "rftoolsbase:recipes/rftoolsbase/filter_module": {
+    "criteria": {
+      "hopper": "2026-08-13 16:39:34 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
