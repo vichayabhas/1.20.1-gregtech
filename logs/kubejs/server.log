@@ -1,22 +1,22 @@
-[18:04:52] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
-[18:04:52] [INIT] Loaded plugins:
-[18:04:52] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[18:04:52] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[18:04:52] [INIT] - site.siredvin.gttruesteam.integrations.kubejs.Plugin
-[18:04:52] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[18:04:52] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[18:04:52] [INIT] - com.gtceuterminal.integration.kjs.TerminalKubeJSPlugin
-[18:04:52] [INIT] - argent_matter.gcyr.integration.kjs.GCYRKubeJSPlugin
-[18:04:52] [INIT] - com.probejs.ProbeJSPlugin
-[18:04:52] [INFO] example.js#5: Hello, World! (Loaded server scripts)
-[18:04:52] [INFO] Loaded script server_scripts:example.js in 0.001 s
-[18:04:52] [INFO] Loaded 1/1 KubeJS server scripts in 0.006 s with 0 errors and 0 warnings
-[18:04:52] [INFO] Scripts loaded
-[18:04:52] [INFO] Initializing recipe event...
-[18:04:53] [INFO] Processing recipes...
-[18:04:54] [INFO] Found 59426 recipes in 1.511 s
-[18:04:54] [INFO] Posted recipe events in 18.45 ms
-[18:04:54] [WARN] Error parsing recipe gtceu:shapeless/centrifuged_ore_to_dust_neutronium[minecraft:crafting_shapeless]: {"type":"minecraft:crafting_shapeless","ingredients":[{"tag":"gtceu:tools/crafting_hammers"},[]],"result":{"item":"gtceu:neutronium_mixture_dust"}}: Item array cannot be empty, at least one item must be defined
-[18:04:55] [WARN] Error parsing recipe bibliocraft:enchanted_book_cloning_in_printing_table[bibliocraft:printing_table_cloning_with_enchantments]: {"type":"bibliocraft:printing_table_cloning_with_enchantments","duration":600,"experience_cost":{"type":"bibliocraft:enchantment_levels","data_component":"minecraft:stored_enchantments","normal_cost":1.0,"treasure_cost":2.0},"ingredients":[{"item":"minecraft:book"}],"result":{"count":1,"item":"minecraft:enchanted_book"}}: Failed to decode from JSON
-[18:04:56] [INFO] Added 6 recipes, removed 5 recipes, modified 5 recipes, with 2 failed recipes in 1.576 s
-[18:05:01] [INFO] Server resource reload complete!
+[20:28:38] [INIT] KubeJS 2001.6.5-build.26; MC 2001 forge
+[20:28:38] [INIT] Loaded plugins:
+[20:28:38] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[20:28:38] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[20:28:38] [INIT] - site.siredvin.gttruesteam.integrations.kubejs.Plugin
+[20:28:38] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[20:28:38] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[20:28:38] [INIT] - com.gtceuterminal.integration.kjs.TerminalKubeJSPlugin
+[20:28:38] [INIT] - argent_matter.gcyr.integration.kjs.GCYRKubeJSPlugin
+[20:28:38] [INIT] - com.probejs.ProbeJSPlugin
+[20:28:38] [INFO] example.js#5: Hello, World! (Loaded server scripts)
+[20:28:38] [INFO] Loaded script server_scripts:example.js in 0.001 s
+[20:28:38] [INFO] Loaded 1/1 KubeJS server scripts in 0.012 s with 0 errors and 0 warnings
+[20:28:38] [INFO] Scripts loaded
+[20:28:38] [INFO] Initializing recipe event...
+[20:28:40] [INFO] Processing recipes...
+[20:28:41] [INFO] Found 59426 recipes in 1.496 s
+[20:28:41] [INFO] Posted recipe events in 21.96 ms
+[20:28:41] [WARN] Error parsing recipe gtceu:shapeless/centrifuged_ore_to_dust_neutronium[minecraft:crafting_shapeless]: {"type":"minecraft:crafting_shapeless","ingredients":[{"tag":"gtceu:tools/crafting_hammers"},[]],"result":{"item":"gtceu:neutronium_mixture_dust"}}: Item array cannot be empty, at least one item must be defined
+[20:28:41] [WARN] Error parsing recipe bibliocraft:enchanted_book_cloning_in_printing_table[bibliocraft:printing_table_cloning_with_enchantments]: {"type":"bibliocraft:printing_table_cloning_with_enchantments","duration":600,"experience_cost":{"type":"bibliocraft:enchantment_levels","data_component":"minecraft:stored_enchantments","normal_cost":1.0,"treasure_cost":2.0},"ingredients":[{"item":"minecraft:book"}],"result":{"count":1,"item":"minecraft:enchanted_book"}}: Failed to decode from JSON
+[20:28:43] [INFO] Added 7 recipes, removed 5 recipes, modified 5 recipes, with 2 failed recipes in 1.750 s
+[20:28:48] [INFO] Server resource reload complete!
