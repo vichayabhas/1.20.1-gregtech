@@ -13,4 +13,5 @@ StartupEvents.registry('item', e => {
     e.create('debug2')
     e.create('debug3')
     e.create('debug4')
+    e.create('potassium_ingot')
 })
