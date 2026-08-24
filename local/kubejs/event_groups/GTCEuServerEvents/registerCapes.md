@@ -24,8 +24,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | registerCape | ResourceLocation, ResourceLocation |  | void | ✘ |
-| unlockCapeFor | UUID, ResourceLocation |  | void | ✘ |
 | registerFreeCape | ResourceLocation, ResourceLocation |  | void | ✘ |
+| unlockCapeFor | UUID, ResourceLocation |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |
@@ -46,16 +46,6 @@ Note: Even if no fields are listed above, some methods are still available as fi
 Registers a cape.
 ```
 
-- `void unlockCapeFor(UUID owner, ResourceLocation capeId)`
-
-  Parameters:
-  - owner: UUID- The UUID of the player to give the cape to.
-  - capeId: ResourceLocation- The cape to give
-
-```
-Automatically makes a cape available to a player.
-```
-
 - `void registerFreeCape(ResourceLocation id, ResourceLocation texture)`
 
   Parameters:
@@ -64,6 +54,16 @@ Automatically makes a cape available to a player.
 
 ```
 Registers a cape that will always be unlocked for all players.
+```
+
+- `void unlockCapeFor(UUID owner, ResourceLocation capeId)`
+
+  Parameters:
+  - owner: UUID- The UUID of the player to give the cape to.
+  - capeId: ResourceLocation- The cape to give
+
+```
+Automatically makes a cape available to a player.
 ```
 
 - `Object exit(Object var0)`

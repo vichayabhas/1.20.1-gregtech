@@ -1,0 +1,253 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2026-08-23 15:03:37
+Description: Unexpected error
+
+java.lang.NoClassDefFoundError: dev/emi/emi/api/stack/EmiIngredient
+	at com.gtceu.calcboard.client.event.ClientForgeEvents.onPlayerLoggedIn(ClientForgeEvents.java:36) ~[gtcalcboard-1.20.1-2.0.0-alpha.6.jar%23233!/:1.20.1-2.0.0-alpha.6] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at com.gtceu.calcboard.client.event.__ClientForgeEvents_onPlayerLoggedIn_LoggingIn.invoke(.dynamic) ~[gtcalcboard-1.20.1-2.0.0-alpha.6.jar%23233!/:1.20.1-2.0.0-alpha.6] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%2387!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%2387!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%2387!/:?] {}
+	at net.minecraftforge.client.ForgeHooksClient.firePlayerLogin(ForgeHooksClient.java:941) ~[forge-1.20.1-47.4.10-universal.jar%23277!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.client.multiplayer.ClientPacketListener.m_5998_(ClientPacketListener.java:415) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.network.protocol.game.ClientboundLoginPacket.m_5797_(ClientboundLoginPacket.java:95) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.network.protocol.game.ClientboundLoginPacket.m_5797_(ClientboundLoginPacket.java:25) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.network.protocol.PacketUtils.m_263899_(PacketUtils.java:22) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:156) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,re:computing_frames,pl:rei_plugin_compatibilities:B,re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:130) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18699_(BlockableEventLoop.java:115) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1106) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,pl:mixin:APP:configuration.mixins.json:MinecraftMixin,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:flywheel.impl.mixins.json:MinecraftMixin,pl:mixin:APP:ponder-common.mixins.json:client.WindowResizeMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,pl:mixin:APP:configuration.mixins.json:MinecraftMixin,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:flywheel.impl.mixins.json:MinecraftMixin,pl:mixin:APP:ponder-common.mixins.json:client.WindowResizeMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-47.4.10.jar:?] {re:classloading,pl:rei_plugin_compatibilities:B,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+Caused by: java.lang.ClassNotFoundException: dev.emi.emi.api.stack.EmiIngredient
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source) ~[?:?] {}
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:?] {}
+	... 32 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mod: 
+	GregTech Calculator Board (gtcalcboard), Version: 2.0.0-alpha.6
+		at TRANSFORMER/gtcalcboard@2.0.0-alpha.6/com.gtceu.calcboard.client.event.ClientForgeEvents.onPlayerLoggedIn(ClientForgeEvents.java:36)
+Stacktrace:
+	at com.gtceu.calcboard.client.event.ClientForgeEvents.onPlayerLoggedIn(ClientForgeEvents.java:36) ~[gtcalcboard-1.20.1-2.0.0-alpha.6.jar%23233!/:1.20.1-2.0.0-alpha.6] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at com.gtceu.calcboard.client.event.__ClientForgeEvents_onPlayerLoggedIn_LoggingIn.invoke(.dynamic) ~[gtcalcboard-1.20.1-2.0.0-alpha.6.jar%23233!/:1.20.1-2.0.0-alpha.6] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%2387!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%2387!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%2387!/:?] {}
+	at net.minecraftforge.client.ForgeHooksClient.firePlayerLogin(ForgeHooksClient.java:941) ~[forge-1.20.1-47.4.10-universal.jar%23277!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.client.multiplayer.ClientPacketListener.m_5998_(ClientPacketListener.java:415) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.network.protocol.game.ClientboundLoginPacket.m_5797_(ClientboundLoginPacket.java:95) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.network.protocol.game.ClientboundLoginPacket.m_5797_(ClientboundLoginPacket.java:25) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.network.protocol.PacketUtils.m_263899_(PacketUtils.java:22) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:156) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,re:computing_frames,pl:rei_plugin_compatibilities:B,re:classloading,pl:rei_plugin_compatibilities:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:130) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B}
+-- Affected level --
+Details:
+	All players: 0 total; []
+	Chunk stats: 961, 0
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (8,64,8), Section: (at 8,0,8 in 0,4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 0 game time, 0 day time
+	Server brand: ~~NULL~~
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.ClientLevel.m_6026_(ClientLevel.java:455) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,pl:mixin:APP:architectury.mixins.json:MixinClientLevel,pl:mixin:APP:kubejs-common.mixins.json:ClientLevelMixin,pl:mixin:APP:gtceu.mixins.json:client.ClientLevelAccessor,pl:mixin:APP:gcyr.mixins.json:ClientLevelMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91354_(Minecraft.java:2319) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,pl:mixin:APP:configuration.mixins.json:MinecraftMixin,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:flywheel.impl.mixins.json:MinecraftMixin,pl:mixin:APP:ponder-common.mixins.json:client.WindowResizeMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:740) ~[client-1.20.1-20230612.114412-srg.jar%23272!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:rei_plugin_compatibilities:B,pl:mixin:APP:configuration.mixins.json:MinecraftMixin,pl:mixin:APP:ae2.mixins.json:PickColorMixin,pl:mixin:APP:flywheel.impl.mixins.json:MinecraftMixin,pl:mixin:APP:ponder-common.mixins.json:client.WindowResizeMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[forge-47.4.10.jar:?] {re:classloading,pl:rei_plugin_compatibilities:B,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.4.10.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: gtceu:dynamic_assets, vanilla, mod_resources, KubeJS Resource Pack [assets], file/Gregtech_CEu_Modern_Programmer_Art.zip, file/Power of Sounds 1.1
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.8, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 698765304 bytes (666 MiB) / 4294967296 bytes (4096 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: 13th Gen Intel(R) Core(TM) i7-13620H
+	Identifier: Intel64 Family 6 Model 186 Stepping 2
+	Microarchitecture: unknown
+	Frequency (GHz): 2.92
+	Number of physical packages: 1
+	Number of physical CPUs: 10
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 4050 Laptop GPU
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x28e1
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.7261
+	Graphics card #1 name: Intel(R) UHD Graphics
+	Graphics card #1 vendor: Intel Corporation (0x8086)
+	Graphics card #1 VRAM (MB): 2048.00
+	Graphics card #1 deviceId: 0xa7a8
+	Graphics card #1 versionInfo: DriverVersion=32.0.101.6733
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 59116.05
+	Virtual memory used (MB): 37519.62
+	Swap memory total (MB): 26624.00
+	Swap memory used (MB): 391.26
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx4096m -Xms256m
+	Launched Version: forge-47.4.10
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 572.61, NVIDIA Corporation
+	Window size: 1920x1080
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: vanilla, mod_resources, file/Gregtech_CEu_Modern_Programmer_Art.zip, file/Power of Sounds 1.1
+	Current Language: en_us
+	CPU: 16x 13th Gen Intel(R) Core(TM) i7-13620H
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['arifmini64'/12, l='ServerLevel[New World]', x=3.30, y=-57.00, z=1.91]]
+	Data Packs: vanilla, mod:rhino (incompatible), mod:configuration, mod:jade (incompatible), mod:botarium (incompatible), mod:resourcefulconfig (incompatible), mod:roughlyenoughitems (incompatible), mod:kotlinforforge (incompatible), mod:modnametooltip (incompatible), mod:flywheel, mod:ponder (incompatible), mod:create, mod:gtnn (incompatible), mod:rei_plugin_compatibilities (incompatible), mod:resourcefullib (incompatible), mod:guideme (incompatible), mod:ae2 (incompatible), mod:gtextra, mod:architectury (incompatible), mod:kubejs (incompatible), mod:ldlib (incompatible), mod:gtceu, mod:gttruesteam, mod:gcyr (incompatible), mod:steamadditions (incompatible), mod:probejs (incompatible), mod:cloth_config (incompatible), mod:forge, mod:gcyrextras, mod:gtec, mod:gtceuterminal, mod:createaddition (incompatible), mod:gt_solar, create:dynamic_data, gtceu:dynamic_data, mod:mcwwindows, mod:mcwholidays, mod:mcwpaintings, mod:mcwstairs, mod:mcwdoors, mod:mcwpaths, mod:mcwbridges, mod:mousetweaks, mod:mcwtrpdoors, mod:mcwfences, mod:buildinggadgets2 (incompatible), mod:mcwroofs, mod:mcwfurnitures, mod:mcwlights, mod:framedblocks, mod:gregfluxology (incompatible), mod:bibliocraft, mod:openstairs, mod:fluxnetworks (incompatible), mod:markdown_manual (incompatible), mod:packetfixer (incompatible), mod:opencomputers (incompatible), mod:gtmutils, mod:gtmthings, mod:colormixer, mod:gregtech_steam_expansion, mod:industrialdeco, mod:gtcalcboard, mod:deafission, mod:phoenix_fission
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.10.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+		kotlinforforge@4.20.0
+		lowcodefml@null
+		kotori_scala@3.3.1-build-0
+	Mod List: 
+		rhino-forge-2001.2.3-build.10.jar                 |Rhino                         |rhino                         |2001.2.3-build.10   |DONE      |Manifest: NOSIGNATURE
+		gregfluxology-0.0.2.jar                           |Gregfluxology                 |gregfluxology                 |0.0.2               |DONE      |Manifest: NOSIGNATURE
+		botarium-forge-1.20.1-2.3.4.jar                   |Botarium                      |botarium                      |2.3.4               |DONE      |Manifest: NOSIGNATURE
+		bibliocraft-1.20.1-1.3.1.jar                      |BiblioCraft Legacy            |bibliocraft                   |1.20.1-1.3.1        |DONE      |Manifest: NOSIGNATURE
+		mcw-mcwwindows-2.4.2-mc1.20.1forge.jar            |Macaw's Windows               |mcwwindows                    |2.4.2               |DONE      |Manifest: NOSIGNATURE
+		modnametooltip-1.20.1-1.20.0.jar                  |Mod Name Tooltip              |modnametooltip                |1.20.0              |DONE      |Manifest: NOSIGNATURE
+		opencomputers-1.20.1-1.9.0-2.jar                  |OpenComputers                 |opencomputers                 |1.9.0               |DONE      |Manifest: NOSIGNATURE
+		mcw-holidays-1.1.2-mc1.20.1forge.jar              |Macaw's Holidays              |mcwholidays                   |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		mcw-paintings-1.1.0-mc1.20.1forge.jar             |Macaw's Paintings             |mcwpaintings                  |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		REIPluginCompatibilities-forge-12.0.93.jar        |REI Plugin Compatibilities    |rei_plugin_compatibilities    |12.0.93             |DONE      |Manifest: NOSIGNATURE
+		mcw-mcwstairs-1.0.2-mc1.20.1forge.jar             |Macaw's Stairs and Balconies  |mcwstairs                     |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		mcw-doors-1.1.5-mc1.20.1forge.jar                 |Macaw's Doors                 |mcwdoors                      |1.1.5               |DONE      |Manifest: NOSIGNATURE
+		guideme-20.1.15.jar                               |GuideME                       |guideme                       |20.1.15             |DONE      |Manifest: NOSIGNATURE
+		industrialdeco-1.0.2.jar                          |IndustrialDeco                |industrialdeco                |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		ldlib-forge-1.20.1-1.0.40.b.jar                   |LowDragLib                    |ldlib                         |1.0.40.b            |DONE      |Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.10-universal.jar                |Forge                         |forge                         |47.4.10             |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		mcw-mcwpaths-1.1.1-mc1.20.1forge.jar              |Macaw's Paths and Pavings     |mcwpaths                      |1.1.1               |DONE      |Manifest: NOSIGNATURE
+		client-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		mcw-bridges-3.1.2-mc1.20.1forge.jar               |Macaw's Bridges               |mcwbridges                    |3.1.2               |DONE      |Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.20.1-2.25.1.jar             |Mouse Tweaks                  |mousetweaks                   |2.25.1              |DONE      |Manifest: NOSIGNATURE
+		configuration-forge-1.20.1-2.2.0.jar              |Configuration                 |configuration                 |2.2.0               |DONE      |Manifest: NOSIGNATURE
+		Jade-1.20.1-Forge-11.13.3.jar                     |Jade                          |jade                          |11.13.3+forge       |DONE      |Manifest: NOSIGNATURE
+		appliedenergistics2-forge-15.4.10.jar             |Applied Energistics 2         |ae2                           |15.4.10             |DONE      |Manifest: NOSIGNATURE
+		gtextra-1.1.0.jar                                 |GregTech Modern: Extra        |gtextra                       |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		mcw-trapdoors-1.1.5-mc1.20.1forge.jar             |Macaw's Trapdoors             |mcwtrpdoors                   |1.1.5               |DONE      |Manifest: NOSIGNATURE
+		mcw-mcwfences-1.2.1-mc1.20.1forge.jar             |Macaw's Fences and Walls      |mcwfences                     |1.2.1               |DONE      |Manifest: NOSIGNATURE
+		OpenStairs 1.20.1 v1.5.jar                        |OpenStairs                    |openstairs                    |1.51.20.1           |DONE      |Manifest: NOSIGNATURE
+		resourcefulconfig-forge-1.20.1-2.1.3.jar          |Resourcefulconfig             |resourcefulconfig             |2.1.3               |DONE      |Manifest: NOSIGNATURE
+		RoughlyEnoughItems-12.1.785-forge.jar             |Roughly Enough Items (REI)    |roughlyenoughitems            |12.1.785            |DONE      |Manifest: NOSIGNATURE
+		kffmod-4.20.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.20.0              |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-1.0.5.jar                   |Flywheel                      |flywheel                      |1.0.5               |DONE      |Manifest: NOSIGNATURE
+		Ponder-Forge-1.20.1-1.0.91.jar                    |Ponder                        |ponder                        |1.0.91              |DONE      |Manifest: NOSIGNATURE
+		create-1.20.1-6.0.8.jar                           |Create                        |create                        |6.0.8               |DONE      |Manifest: NOSIGNATURE
+		gtcalcboard-1.20.1-2.0.0-alpha.6.jar              |GregTech Calculator Board     |gtcalcboard                   |2.0.0-alpha.6       |DONE      |Manifest: NOSIGNATURE
+		gtnn-1.20.1-1.3.9.jar                             |GT--                          |gtnn                          |1.3.9               |DONE      |Manifest: NOSIGNATURE
+		FluxNetworks-1.20.1-7.2.1.15.jar                  |Flux Networks                 |fluxnetworks                  |7.2.1.15            |DONE      |Manifest: NOSIGNATURE
+		FramedBlocks-9.4.3.jar                            |FramedBlocks                  |framedblocks                  |9.4.3               |DONE      |Manifest: NOSIGNATURE
+		buildinggadgets2-1.0.8.jar                        |Building Gadgets 2            |buildinggadgets2              |1.0.8               |DONE      |Manifest: NOSIGNATURE
+		resourcefullib-forge-1.20.1-2.1.29.jar            |Resourceful Lib               |resourcefullib                |2.1.29              |DONE      |Manifest: NOSIGNATURE
+		mcw-roofs-2.3.2-mc1.20.1forge.jar                 |Macaw's Roofs                 |mcwroofs                      |2.3.2               |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		kubejs-forge-2001.6.5-build.26.jar                |KubeJS                        |kubejs                        |2001.6.5-build.26   |DONE      |Manifest: NOSIGNATURE
+		gtceu-1.20.1-7.5.3.jar                            |GregTech                      |gtceu                         |7.5.3               |DONE      |Manifest: NOSIGNATURE
+		gtmutils-2.10.1.jar                               |GregTech Modern Utilities     |gtmutils                      |2.10.1              |DONE      |Manifest: NOSIGNATURE
+		gttruesteam-0.3.0.jar                             |GT: True age of Steam         |gttruesteam                   |0.3.0               |DONE      |Manifest: NOSIGNATURE
+		gtmthings-1.6.0.jar                               |GTMThings                     |gtmthings                     |1.6.0               |DONE      |Manifest: NOSIGNATURE
+		colormixer-1.0.0.jar                              |GregTech-Color-Mixer          |colormixer                    |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		steamadditions-1.5.2.jar                          |Steam Additions               |steamadditions                |1.5.1               |DONE      |Manifest: NOSIGNATURE
+		deafission-1.20.1-0.16.0.jar                      |Dea's Fission                 |deafission                    |1.20.1-0.16.0       |DONE      |Manifest: NOSIGNATURE
+		gregtechterminals-6.8.5-fix.jar                   |Gregtech Terminals            |gtceuterminal                 |6.8.5-fix           |DONE      |Manifest: NOSIGNATURE
+		gcyr-1.20.1-0.2.9.jar                             |Gregicality Rocketry          |gcyr                          |0.2.9               |DONE      |Manifest: NOSIGNATURE
+		gcyrextras-1.20.1-0.1.3.jar                       |GCYR Extras                   |gcyrextras                    |0.1.3               |DONE      |Manifest: NOSIGNATURE
+		gregtech_steam_expansion-0.1.0.jar                |GregTech Steam Expansion      |gregtech_steam_expansion      |0.1.0               |DONE      |Manifest: NOSIGNATURE
+		markdown_manual-MC1.20.1-forge-1.2.5+c3f0b88.jar  |Markdown Manual               |markdown_manual               |1.2.5+c3f0b88       |DONE      |Manifest: NOSIGNATURE
+		PhoenixFission-2.4.jar                            |Phoenix's Fission             |phoenix_fission               |0.1.0               |DONE      |Manifest: NOSIGNATURE
+		mcw-furniture-3.4.1-mc1.20.1forge.jar             |Macaw's Furniture             |mcwfurnitures                 |3.4.1               |DONE      |Manifest: NOSIGNATURE
+		probejs-6.0.1-forge.jar                           |ProbeJS                       |probejs                       |6.0.1               |DONE      |Manifest: NOSIGNATURE
+		packetfixer-3.3.2-1.18-1.20.4-merged.jar          |PacketFixer                   |packetfixer                   |3.3.2               |DONE      |Manifest: NOSIGNATURE
+		gtec-1.20.1-0.3.0.jar                             |Gregtech Extended Chemistry Ex|gtec                          |0.3.0               |DONE      |Manifest: NOSIGNATURE
+		mcw-lights-1.1.5-mc1.20.1forge.jar                |Macaw's Lights and Lamps      |mcwlights                     |1.1.5               |DONE      |Manifest: NOSIGNATURE
+		createaddition-1.20.1-1.3.3.jar                   |Create Crafts & Additions     |createaddition                |1.20.1-1.3.3        |DONE      |Manifest: NOSIGNATURE
+		gt_solar-1.20.1-0.2.1.jar                         |GregTech Solar Expansion      |gt_solar                      |0.2.1               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 5832a672-a758-4b06-9dee-796b55405863
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.10
+	Flywheel Backend: flywheel:indirect

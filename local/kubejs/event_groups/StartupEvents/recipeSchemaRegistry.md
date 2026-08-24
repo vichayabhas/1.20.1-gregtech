@@ -21,9 +21,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | register | ResourceLocation, RecipeSchema |  | void | ✘ |
 | getComponents |  |  | Map<String, RecipeComponentFactory> | ✘ |
+| namespace | String |  | RecipeNamespace | ✘ |
 | mapRecipe | String, String |  | void | ✘ |
 | mapRecipe | String, ResourceLocation |  | void | ✘ |
-| namespace | String |  | RecipeNamespace | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

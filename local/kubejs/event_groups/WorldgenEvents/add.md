@@ -21,10 +21,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | addLake | Consumer<AddLakeProperties> |  | void | ✘ |
-| addSpawn | Consumer<AddSpawnProperties> |  | void | ✘ |
+| addOre | Consumer<AddOreProperties> |  | void | ✘ |
 | addSpawn | BiomeFilter, MobCategory, String |  | void | ✘ |
 | addSpawn | MobCategory, String |  | void | ✘ |
-| addOre | Consumer<AddOreProperties> |  | void | ✘ |
+| addSpawn | Consumer<AddSpawnProperties> |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

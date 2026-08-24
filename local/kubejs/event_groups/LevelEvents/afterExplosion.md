@@ -23,17 +23,17 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getAffectedEntities |  |  | EntityArrayList | ✘ |
-| removeAffectedBlock | BlockContainerJS |  | void | ✘ |
+| removeKnockback |  |  | void | ✘ |
 | removeAllAffectedEntities |  |  | void | ✘ |
+| removeAffectedBlock | BlockContainerJS |  | void | ✘ |
 | removeAffectedEntity | Entity |  | void | ✘ |
 | removeAllAffectedBlocks |  |  | void | ✘ |
-| removeKnockback |  |  | void | ✘ |
+| getAffectedEntities |  |  | EntityArrayList | ✘ |
 | getAffectedBlocks |  |  | List<BlockContainerJS> | ✘ |
 | getLevel |  |  | Level | ✘ |
-| getExploder |  |  | LivingEntity | ✘ |
-| getX |  |  | double | ✘ |
 | getZ |  |  | double | ✘ |
+| getX |  |  | double | ✘ |
+| getExploder |  |  | LivingEntity | ✘ |
 | getPosition |  |  | Vec3 | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getY |  |  | double | ✘ |
@@ -48,9 +48,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `EntityArrayList getAffectedEntities()`
+- `void removeKnockback()`
 ```
-Gets a list of all entities affected by the explosion.
+Remove all knockback from all affected *players*.
+```
+
+- `void removeAllAffectedEntities()`
+```
+Remove all entities from the list of affected entities.
 ```
 
 - `void removeAffectedBlock(BlockContainerJS var0)`
@@ -60,11 +65,6 @@ Gets a list of all entities affected by the explosion.
 
 ```
 Remove a block from the list of affected blocks.
-```
-
-- `void removeAllAffectedEntities()`
-```
-Remove all entities from the list of affected entities.
 ```
 
 - `void removeAffectedEntity(Entity var0)`
@@ -81,9 +81,9 @@ Remove an entity from the list of affected entities.
 Remove all blocks from the list of affected blocks.
 ```
 
-- `void removeKnockback()`
+- `EntityArrayList getAffectedEntities()`
 ```
-Remove all knockback from all affected *players*.
+Gets a list of all entities affected by the explosion.
 ```
 
 - `List<BlockContainerJS> getAffectedBlocks()`

@@ -2154,27 +2154,21 @@
     },
     "done": true
   },
-  "rftoolsbase:recipes/rftoolsbase/filter_module": {
-    "criteria": {
-      "hopper": "2026-08-13 16:39:34 +0700"
-    },
-    "done": true
-  },
-  "create:recipes/misc/crafting/kinetics/super_glue": {
-    "criteria": {
-      "has_item": "2026-08-20 14:11:38 +0700"
-    },
-    "done": true
-  },
   "create:recipes/misc/crafting/appliances/crafting_blueprint": {
     "criteria": {
       "has_item": "2026-08-20 14:11:14 +0700"
     },
     "done": true
   },
-  "rftoolsbase:recipes/rftoolsbase/crafting_card": {
+  "minecraft:story/root": {
     "criteria": {
-      "crafter": "2026-08-20 14:11:14 +0700"
+      "crafting_table": "2026-08-20 14:11:14 +0700"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/super_glue": {
+    "criteria": {
+      "has_item": "2026-08-20 14:11:38 +0700"
     },
     "done": true
   },
@@ -2193,12 +2187,6 @@
   "create:recipes/misc/crafting/kinetics/whisk": {
     "criteria": {
       "has_item": "2026-08-20 14:11:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:story/root": {
-    "criteria": {
-      "crafting_table": "2026-08-20 14:11:14 +0700"
     },
     "done": true
   },

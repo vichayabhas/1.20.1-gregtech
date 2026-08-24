@@ -34,27 +34,27 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | remove | RecipeFilter |  | void | ✘ |
-| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
-| getRecipes |  |  | Map<String, Object> | ✘ |
-| printTypes |  |  | void | ✘ |
-| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
-| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
-| custom | JsonObject |  | RecipeJS | ✘ |
-| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
 | stage | RecipeFilter, String |  | void | ✘ |
-| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
-| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
-| runInParallel | Runnable |  | void | ✔ |
 | runInParallel | Callable<T> |  | T | ✔ |
-| countRecipes | RecipeFilter |  | int | ✘ |
+| runInParallel | Runnable |  | void | ✔ |
+| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
 | recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
+| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
 | forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
+| countRecipes | RecipeFilter |  | int | ✘ |
+| printAllTypes |  |  | void | ✘ |
 | containsRecipe | RecipeFilter |  | boolean | ✘ |
 | findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
-| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
 | printExamples | String |  | void | ✘ |
 | setItemErrors | boolean |  | void | ✘ |
-| printAllTypes |  |  | void | ✘ |
+| custom | JsonObject |  | RecipeJS | ✘ |
+| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
+| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
+| printTypes |  |  | void | ✘ |
+| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
+| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
+| getRecipes |  |  | Map<String, Object> | ✘ |
+| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

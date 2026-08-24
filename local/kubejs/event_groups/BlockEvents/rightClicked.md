@@ -24,13 +24,13 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getItem |  |  | ItemStack | ✘ |
-| getEntity |  |  | Player | ✘ |
-| getFacing |  |  | Direction | ✘ |
+| getEntity |  |  | LivingEntity | ✘ |
 | getHand |  |  | InteractionHand | ✘ |
+| getFacing |  |  | Direction | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | addGameStage | String |  | void | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -49,14 +49,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 The position of the block that was right clicked.
 ```
 
-- `Player getEntity()`
+- `LivingEntity getEntity()`
 ```
 The player that right clicked the block.
-```
-
-- `Direction getFacing()`
-```
-The face of the block being right clicked.
 ```
 
 - `InteractionHand getHand()`
@@ -64,9 +59,23 @@ The face of the block being right clicked.
 The hand that was used to right click the block.
 ```
 
+- `Direction getFacing()`
+```
+The face of the block being right clicked.
+```
+
 - `BlockContainerJS getBlock()`
 ```
 The block that was right clicked.
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `void removeGameStage(String var0)`
@@ -85,15 +94,6 @@ Removes the specified game stage from the player
 
 ```
 Adds the specified game stage to the player
-```
-
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Checks if the player has the specified game stage
 ```
 
 - `Object exit(Object var0)`

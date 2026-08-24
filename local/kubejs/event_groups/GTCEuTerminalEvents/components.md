@@ -21,15 +21,15 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | addComponent | String, String, String, int, Map<String, String> |  | void | ✘ |
 | addComponent | String, String, String, int |  | void | ✘ |
+| addEnergyHatch | String, String, String, String, int |  | void | ✘ |
+| addCoil | String, String, int, int |  | void | ✘ |
+| addFluidHatch | String, String, String, String, int |  | void | ✘ |
 | addBus | String, String, String, int |  | void | ✘ |
 | addWirelessHatch | String, String, String, String, int |  | void | ✘ |
-| addFluidHatch | String, String, String, String, int |  | void | ✘ |
-| addCoil | String, String, int, int |  | void | ✘ |
-| addMufflerHatch | String, String, int |  | void | ✘ |
 | addLaserHatch | String, String, String, String, int |  | void | ✘ |
-| addEnergyHatch | String, String, String, String, int |  | void | ✘ |
-| addGroup | String, String, int, String, String, boolean |  | void | ✘ |
+| addMufflerHatch | String, String, int |  | void | ✘ |
 | addDualHatch | String, String, String, int |  | void | ✘ |
+| addGroup | String, String, int, String, String, boolean |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

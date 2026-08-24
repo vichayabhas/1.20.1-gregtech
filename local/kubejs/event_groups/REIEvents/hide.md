@@ -21,10 +21,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | hide | Object |  | void | ✘ |
 | hide | Object, Object |  | void | ✘ |
-| hideNoFilter | Object |  | void | ✘ |
-| getAllEntryValues |  |  | List<T> | ✘ |
-| hideAll | Object |  | void | ✘ |
 | hideAll |  |  | void | ✘ |
+| hideAll | Object |  | void | ✘ |
+| getAllEntryValues |  |  | List<T> | ✘ |
+| hideNoFilter | Object |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

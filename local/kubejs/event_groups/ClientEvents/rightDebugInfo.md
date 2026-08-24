@@ -23,13 +23,13 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getShowDebug |  |  | boolean | ✘ |
 | getLines |  |  | List<String> | ✘ |
+| getShowDebug |  |  | boolean | ✘ |
 | getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | LocalPlayer | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | addGameStage | String |  | void | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -42,14 +42,23 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
+- `List<String> getLines()`
+```
+The lines of debug info. Mutating this list will change the debug info.
+```
+
 - `boolean getShowDebug()`
 ```
 Whether the debug info should be rendered.
 ```
 
-- `List<String> getLines()`
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
 ```
-The lines of debug info. Mutating this list will change the debug info.
+Checks if the player has the specified game stage
 ```
 
 - `void removeGameStage(String var0)`
@@ -68,15 +77,6 @@ Removes the specified game stage from the player
 
 ```
 Adds the specified game stage to the player
-```
-
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Checks if the player has the specified game stage
 ```
 
 - `Object exit(Object var0)`

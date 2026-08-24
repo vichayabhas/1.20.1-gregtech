@@ -21,8 +21,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | remove | ResourceLocation[] |  | void | ✘ |
 | removeIf | Predicate<CategoryRegistry.CategoryConfiguration<?>> |  | void | ✘ |
-| getCategories |  |  | CategoryRegistry | ✘ |
 | getRegistry |  |  | CategoryRegistry | ✘ |
+| getCategories |  |  | CategoryRegistry | ✘ |
 | getCategoryIds |  |  | Collection<ResourceLocation> | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |

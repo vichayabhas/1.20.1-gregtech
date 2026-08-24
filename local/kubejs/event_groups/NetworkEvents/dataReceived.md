@@ -32,9 +32,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getChannel |  |  | String | ✘ |
 | getData |  |  | CompoundTag | ✘ |
 | getEntity |  |  | Player | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | addGameStage | String |  | void | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
@@ -63,6 +63,15 @@ The data of the packet.
 The player that sent the packet. Always `Minecraft.player` in `client_scripts`.
 ```
 
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
+```
+
 - `void removeGameStage(String var0)`
 
   Parameters:
@@ -79,15 +88,6 @@ Removes the specified game stage from the player
 
 ```
 Adds the specified game stage to the player
-```
-
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Checks if the player has the specified game stage
 ```
 
 - `Object exit(Object var0)`

@@ -10,6 +10,8 @@
   "ae2:pattern_provider": null,
   "ae2:power_storage": null,
   "ae2:server_data": null,
+  "deafission:battery": null,
+  "deafission:reactor": null,
   "framedblocks:framed_item_frame": null,
   "gtceu:auto_output_info": null,
   "gtceu:battery_info": null,
@@ -37,6 +39,9 @@
   "gtceu:steam_boiler_info": null,
   "gtceu:transformer": null,
   "gtceu:workable_provider": null,
+  "gtmthings:wireless_energy_hatch_provider": null,
+  "gtmutils:enlarged_me_stocking_bus_info": null,
+  "gtmutils:web_info": null,
   "jade:block_face": null,
   "jade:distance": null,
   "jade:mod_name": null,
@@ -82,5 +87,6 @@
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
-  "minecraft:zombie_villager": null
+  "minecraft:zombie_villager": null,
+  "phoenix_fission:fission_machine_info": null
 }

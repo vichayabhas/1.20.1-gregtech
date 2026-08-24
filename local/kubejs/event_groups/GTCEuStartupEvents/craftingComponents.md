@@ -20,20 +20,20 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | set | CraftingComponent, Map<Object, Object> |  | void | ✘ |
-| setFallbackMaterialEntry | CraftingComponent, MaterialEntry |  | void | ✘ |
-| createMaterialEntry | String, MaterialEntry |  | ComponentWrapper | ✘ |
-| setItem | CraftingComponent, int, ItemStack |  | void | ✘ |
 | setTag | CraftingComponent, int, ResourceLocation |  | void | ✘ |
-| setItems | CraftingComponent, Map<Object, Object> |  | void | ✘ |
-| setTags | CraftingComponent, Map<Object, Object> |  | void | ✘ |
-| createItem | String, ItemStack |  | ComponentWrapper | ✘ |
 | setFallbackTag | CraftingComponent, ResourceLocation |  | void | ✘ |
-| removeTier | CraftingComponent, int |  | void | ✘ |
-| setFallbackItem | CraftingComponent, ItemStack |  | void | ✘ |
+| setMaterialEntries | CraftingComponent, Map<Object, Object> |  | void | ✘ |
 | setMaterialEntry | CraftingComponent, int, MaterialEntry |  | void | ✘ |
 | removeTiers | CraftingComponent, int[] |  | void | ✘ |
-| setMaterialEntries | CraftingComponent, Map<Object, Object> |  | void | ✘ |
+| removeTier | CraftingComponent, int |  | void | ✘ |
+| setFallbackItem | CraftingComponent, ItemStack |  | void | ✘ |
+| setItem | CraftingComponent, int, ItemStack |  | void | ✘ |
+| setItems | CraftingComponent, Map<Object, Object> |  | void | ✘ |
 | createTag | String, ResourceLocation |  | ComponentWrapper | ✘ |
+| createItem | String, ItemStack |  | ComponentWrapper | ✘ |
+| setTags | CraftingComponent, Map<Object, Object> |  | void | ✘ |
+| setFallbackMaterialEntry | CraftingComponent, MaterialEntry |  | void | ✘ |
+| createMaterialEntry | String, MaterialEntry |  | ComponentWrapper | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

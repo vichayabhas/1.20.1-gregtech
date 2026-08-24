@@ -1,4 +1,7 @@
 {
+  "gtmthings": {
+    "wireless_energy_hatch_provider": true
+  },
   "framedblocks": {
     "framed_item_frame": true
   },
@@ -54,6 +57,14 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "deafission": {
+    "reactor": true,
+    "battery": true
+  },
+  "gtmutils": {
+    "web_info": true,
+    "enlarged_me_stocking_bus_info": true
+  },
   "gtceu": {
     "auto_output_info": true,
     "primitive_pump": true,
@@ -86,6 +97,9 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
+  },
+  "phoenix_fission": {
+    "fission_machine_info": true
   },
   "ae2": {
     "part_icon": true,
