@@ -57,10 +57,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "deafission": {
-    "reactor": true,
-    "battery": true
-  },
   "gtmutils": {
     "web_info": true,
     "enlarged_me_stocking_bus_info": true
@@ -98,8 +94,8 @@
     "registry_name": "OFF",
     "mod_name": true
   },
-  "phoenix_fission": {
-    "fission_machine_info": true
+  "balm": {
+    "jade": true
   },
   "ae2": {
     "part_icon": true,

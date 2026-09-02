@@ -2190,5 +2190,77 @@
     },
     "done": true
   },
+  "gtceu:recipes/misc/netherite_lv_wrench_smithing_transform_from_diamond": {
+    "criteria": {
+      "has_lv_diamond_wrench": "2026-08-25 11:10:07 +0700"
+    },
+    "done": true
+  },
+  "gtceu:recipes/misc/netherite_hv_screwdriver_smithing_transform_from_diamond": {
+    "criteria": {
+      "has_hv_diamond_screwdriver": "2026-08-25 14:40:32 +0700"
+    },
+    "done": true
+  },
+  "ae2:main/storage_bus": {
+    "criteria": {
+      "part": "2026-08-25 20:31:54 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/wireless_terminal": {
+    "criteria": {
+      "has_terminal": "2026-08-25 20:32:19 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/parts/terminals_crafting": {
+    "criteria": {
+      "has_terminal": "2026-08-25 20:32:19 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/cells/view_cell_storage": {
+    "criteria": {
+      "has_terminal": "2026-08-25 20:32:19 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/cells/view_cell": {
+    "criteria": {
+      "has_terminal": "2026-08-25 20:32:19 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/upgrade_wireless_crafting_terminal": {
+    "criteria": {
+      "has_terminal": "2026-08-25 20:32:23 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/wireless_crafting_terminal": {
+    "criteria": {
+      "has_wireless_receiver": "2026-08-25 20:32:36 +0700"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/wireless_access_point": {
+    "criteria": {
+      "has_wireless_receiver": "2026-08-25 20:32:36 +0700"
+    },
+    "done": true
+  },
+  "ae2:main/controller": {
+    "criteria": {
+      "certus": "2026-08-25 20:32:57 +0700"
+    },
+    "done": true
+  },
+  "ae2:main/network1": {
+    "criteria": {
+      "cable": "2026-08-25 20:33:24 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
