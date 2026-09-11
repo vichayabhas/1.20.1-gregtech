@@ -69,6 +69,7 @@
 #251DD1 gtceu:luv_machine_casing
 #496D0F gtceu:lv_buffer
 #E8309A gtceu:lv_canner
+#1FA5A3 gtceu:lv_energy_input_hatch
 #B48C90 gtceu:lv_input_bus
 #C364D0 gtceu:lv_input_hatch
 #730491 gtceu:lv_output_bus
@@ -77,6 +78,7 @@
 #F2997D gtceu:lv_super_tank
 #D3C882 gtceu:manganese_phosphide_double_wire
 #A4FC4B minecraft:mossy_cobblestone
+#B89B24 gtceu:mv_energy_input_hatch
 #A12E6F gtceu:mv_input_hatch
 #2EDB35 gtceu:naquadah_coil_block
 #46E184 gtnn:neutron_activator
@@ -115,6 +117,7 @@
 #0AF485 gtceu:ulv_input_hatch
 #D02A3C gtceu:ulv_output_bus
 #6E477C gtceu:ulv_output_hatch
+#46BACD gtceu:uv_chemical_reactor
 #D18C49 gtceu:uv_energy_input_hatch_16a
 #CBFFD4 gtceu:uv_energy_input_hatch_4a
 #AF543F gtceu:uv_fusion_reactor
