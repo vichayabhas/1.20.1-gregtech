@@ -56,6 +56,7 @@
 #F972B0 gtceu:hv_machine_casing
 #56378D gtceu:hv_output_hatch
 #9D871C gtceu:inert_machine_casing
+#23066B ae2:interface
 #2E2249 minecraft:iron_block
 #2A07F3 gtceu:iv_input_hatch
 #F02DD4 gtceu:iv_parallel_hatch
@@ -78,6 +79,7 @@
 #F2997D gtceu:lv_super_tank
 #D3C882 gtceu:manganese_phosphide_double_wire
 #A4FC4B minecraft:mossy_cobblestone
+#8DDC10 gtceu:mv_buffer
 #B89B24 gtceu:mv_energy_input_hatch
 #A12E6F gtceu:mv_input_hatch
 #2EDB35 gtceu:naquadah_coil_block
