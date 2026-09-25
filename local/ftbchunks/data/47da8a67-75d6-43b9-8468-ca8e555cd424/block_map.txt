@@ -67,6 +67,7 @@
 #B69573 gtceu:large_chemical_reactor
 #BEFC6C gtceu:large_electrolyzer
 #D96A7F gtceu:large_mixer
+#2578DA gtceu:luv_electrolyzer
 #251DD1 gtceu:luv_machine_casing
 #496D0F gtceu:lv_buffer
 #E8309A gtceu:lv_canner
