@@ -645,7 +645,7 @@ compat:
 
   # Whether to hide filled cells in JEI and creative search menu.
   # Default: true
-  hideFilledCellsInRecipeViewer: true
+  hideFilledCellsInRecipeViewer: false
 
   # Whether to hide the ore processing diagrams in JEI
   # Default: false

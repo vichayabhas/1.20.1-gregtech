@@ -23,10 +23,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| getEntity |  |  | Player | ✘ |
 | getAdvancement |  |  | AdvancementJS | ✘ |
-| getEntity |  |  | Entity | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
 | removeGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -41,23 +41,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `AdvancementJS getAdvancement()`
-```
-Returns the advancement that was obtained.
-```
-
-- `Entity getEntity()`
+- `Player getEntity()`
 ```
 Returns the player that got the advancement.
 ```
 
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
+- `AdvancementJS getAdvancement()`
 ```
-Checks if the player has the specified game stage
+Returns the advancement that was obtained.
 ```
 
 - `void removeGameStage(String var0)`
@@ -67,6 +58,15 @@ Checks if the player has the specified game stage
 
 ```
 Removes the specified game stage from the player
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `void addGameStage(String var0)`

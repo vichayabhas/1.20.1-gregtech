@@ -27,13 +27,13 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getMessage |  |  | String | ✘ |
-| getComponent |  |  | Component | ✘ |
-| getUsername |  |  | String | ✘ |
-| getEntity |  |  | LivingEntity | ✘ |
-| setMessage | Component |  | void | ✘ |
 | setComponent | Component |  | void | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
+| getEntity |  |  | Entity | ✘ |
+| getUsername |  |  | String | ✘ |
+| getComponent |  |  | Component | ✘ |
+| setMessage | Component |  | void | ✘ |
 | removeGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -53,9 +53,18 @@ Note: Even if no fields are listed above, some methods are still available as fi
 Gets the message that the player sent.
 ```
 
-- `Component getComponent()`
+- `void setComponent(Component var0)`
+
+  Parameters:
+  - var0: Component
+
 ```
-Gets the message that the player sent.
+Sets the message that the player sent.
+```
+
+- `Entity getEntity()`
+```
+Gets the player that sent the message.
 ```
 
 - `String getUsername()`
@@ -63,9 +72,9 @@ Gets the message that the player sent.
 Gets the username of the player that sent the message.
 ```
 
-- `LivingEntity getEntity()`
+- `Component getComponent()`
 ```
-Gets the player that sent the message.
+Gets the message that the player sent.
 ```
 
 - `void setMessage(Component var0)`
@@ -77,13 +86,13 @@ Gets the player that sent the message.
 Sets the message that the player sent.
 ```
 
-- `void setComponent(Component var0)`
+- `void removeGameStage(String var0)`
 
   Parameters:
-  - var0: Component
+  - var0: String
 
 ```
-Sets the message that the player sent.
+Removes the specified game stage from the player
 ```
 
 - `boolean hasGameStage(String var0)`
@@ -93,15 +102,6 @@ Sets the message that the player sent.
 
 ```
 Checks if the player has the specified game stage
-```
-
-- `void removeGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Removes the specified game stage from the player
 ```
 
 - `void addGameStage(String var0)`

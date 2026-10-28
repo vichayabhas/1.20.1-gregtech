@@ -75,9 +75,27 @@ fission:
     # Formula: (ambientTemp - reactorTemp) * C_passive
     passiveCoolingConductivity: 0.005
 
+    # How heat production scales with current heat.
+    # false (default): production is normalized against maxSafeTempK, so it's bounded to a modest
+    #   multiple of baseline output across the whole safe range - reactors settle into a stable idle
+    #   equilibrium well below maxSafeTempK and effectively can't melt down from thermal effects alone,
+    #   no matter how long they're left running unattended.
+    # true: production grows exponentially with current heat instead of the normalized/bounded curve
+    #   above, so once cooling falls behind, the reactor genuinely spirals toward meltdown rather than
+    #   asymptoting to a safe plateau. Exponential growth is much more sensitive to heatGenerationExponent
+    #   than the default curve is - tune that down first if reactors melt down too easily.
+    exponentialHeatGrowth: false
+
     # How quickly the reactor ramps reactivity up or down when control state changes, as a fraction per tick.
     # 1.0 = instant transition, 0.02 = ~1-second ramp, 0.005 = ~4-second ramp.
     reactivityRampRatePerTick: 1.0
+
+    # Reference active-cooling heat removal (HU/t) that corresponds to 100% of an active cooler's
+    # configured coolant usage per tick (both input coolant consumed and hot coolant produced).
+    # Coolant usage scales linearly with how much heat a cooler is actually removing this tick:
+    # coolantConsumed = coolantUsagePerTick * (actualHeatRemoved / coolantReferenceHeatRemovalHUt).
+    # Lower this to make coolers burn through coolant faster as load increases; raise it to soften the scaling.
+    coolantReferenceHeatRemovalHUt: 100.0
 
   # Base GT recipe parallels contributed by each installed fuel rod.
   parallelsPerFuelRod: 1
@@ -139,6 +157,17 @@ fission:
 
     # Additional explosion power per unit of average fuel rod base heat production.
     explosionPowerPerHeatUnit: 0.001
+
+  thermoelectricGenerator:
+    # Cold coolant fluid the Thermoelectric Generator consumes (when not running on the helium cryo-boost loop).
+    coldCoolantFluidId: gtceu:distilled_water
+
+    # Hot coolant fluid produced from the cold coolant.
+    hotCoolantFluidId: gtceu:steam
+
+    # Base mB/s of cold coolant consumed (and hot coolant produced) at 1 exchange column.
+    # Actual usage scales with column count the same way it always has: base * (1 + (columns - 1) * 0.2).
+    baseCoolantAmount: 100
 
   # Cube radius in blocks. Total affected volume is (2r+1)^3.
   nukeCubeRadius: 16

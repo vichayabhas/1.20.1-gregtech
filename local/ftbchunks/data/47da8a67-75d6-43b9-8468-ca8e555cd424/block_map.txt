@@ -4,10 +4,12 @@
 #090A39 gtceu:assembly_line_casing
 #D875AC gtceu:assembly_line_grating
 #D6A450 gtceu:assembly_line_unit
+#F9D4FB gtceu:atomic_casing
 #0791FE gtceu:auto_maintenance_hatch
 #0F359D minecraft:azure_bluet
 #189B99 minecraft:barrel
 #8E46C3 gtceu:basic_data_access_hatch
+#DEB4AD deafission:battery_heat_port_ev
 #840F59 minecraft:bedrock
 #657B45 minecraft:bone_block
 #8A0CF3 gtceu:bronze_pipe_casing
@@ -34,11 +36,14 @@
 #006086 gtceu:electrolytic_cell
 #CFB4F8 gtceu:electrum_small_item_pipe
 #2566A5 minecraft:emerald_block
+#F0EF1C gtceu:ev_energy_input_hatch
+#B2E177 gtceu:ev_input_hatch
 #C3F8CA gtceu:ev_output_hatch
 #9DFD1D gtceu:ev_transformer_2a
 #9DFD5B gtceu:ev_transformer_4a
 #DC4A91 gtnn:exxonmobil_chemical_plant
 #009B14 minecraft:farmland
+#1AF397 deafission:fission_reactor_mk1
 #42D87E gtceu:frostproof_machine_casing
 #B07A98 gtceu:fusion_casing_mk3
 #0FB664 gtceu:fusion_coil
@@ -48,8 +53,10 @@
 #2C1BE1 minecraft:gold_block
 #3F84B7 minecraft:grass_block
 #656D96 gtceu:hastelloy_x_frame
+#4A9DEF deafission:heat_input_hatch_ev
 #9D79AA gtceu:heatproof_machine_casing
 #6C2796 gtnn:high_speed_pipe
+#546EF1 gtceu:huge_duct_pipe
 #37B10B gtceu:hv_buffer
 #D67496 gtceu:hv_canner
 #4C3E54 gtceu:hv_input_hatch
@@ -99,6 +106,7 @@
 #5AD4E8 gtnn:process_machine_casing
 #6F3B9C gtceu:ptfe_pipe_casing
 #46C364 gtceu:reaction_safe_mixing_casing
+#24BE64 minecraft:redstone_torch
 #21C665 buildinggadgets2:render_block
 #514BAD gtceu:robust_machine_casing
 #751E20 gtceu:samarium_iron_arsenic_oxide_quadruple_wire
@@ -132,3 +140,4 @@
 #1854FE gtmthings:wireless_energy_interface
 #A57F9F gtmthings:wireless_energy_monitor
 #97FF93 minecraft:yellow_wool
+#8DE216 gtceu:zpm_energy_input_hatch

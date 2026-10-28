@@ -23,13 +23,13 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| getBlock |  |  | BlockContainerJS | ✘ |
 | getItem |  |  | ItemStack | ✘ |
-| getEntity |  |  | LivingEntity | ✘ |
+| getEntity |  |  | Entity | ✘ |
 | getHand |  |  | InteractionHand | ✘ |
 | getFacing |  |  | Direction | ✘ |
-| getBlock |  |  | BlockContainerJS | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
 | removeGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -44,12 +44,17 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
+- `BlockContainerJS getBlock()`
+```
+The block that was right clicked.
+```
+
 - `ItemStack getItem()`
 ```
 The position of the block that was right clicked.
 ```
 
-- `LivingEntity getEntity()`
+- `Entity getEntity()`
 ```
 The player that right clicked the block.
 ```
@@ -64,9 +69,13 @@ The hand that was used to right click the block.
 The face of the block being right clicked.
 ```
 
-- `BlockContainerJS getBlock()`
+- `void removeGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
 ```
-The block that was right clicked.
+Removes the specified game stage from the player
 ```
 
 - `boolean hasGameStage(String var0)`
@@ -76,15 +85,6 @@ The block that was right clicked.
 
 ```
 Checks if the player has the specified game stage
-```
-
-- `void removeGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Removes the specified game stage from the player
 ```
 
 - `void addGameStage(String var0)`

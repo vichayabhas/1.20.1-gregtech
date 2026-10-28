@@ -12,5 +12,9 @@
             ],
             "url": "./.vscode/probe.doc-schema.json"
         }
+    ],
+    "cSpell.words": [
+        "gtnh",
+        "kubejs"
     ]
 }

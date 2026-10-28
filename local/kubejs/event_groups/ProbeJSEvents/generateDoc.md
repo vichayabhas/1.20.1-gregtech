@@ -24,10 +24,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | transformByName | String, Consumer<DocumentClass> |  | DocGenerationEventJS | ✘ |
 | addSnippet | String, List<Object> |  | DocGenerationEventJS | ✘ |
 | addSnippet | String, List<Object>, String |  | DocGenerationEventJS | ✘ |
-| customSnippet | String, List<String>, List<Object> |  | DocGenerationEventJS | ✘ |
 | customSnippet | String, List<String>, List<Object>, String |  | DocGenerationEventJS | ✘ |
-| getJavaClass | Class<?> |  | DocumentClass | ✘ |
+| customSnippet | String, List<String>, List<Object> |  | DocGenerationEventJS | ✘ |
 | specialType | String, List<Object> |  | DocGenerationEventJS | ✘ |
+| getJavaClass | Class<?> |  | DocumentClass | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

@@ -19,9 +19,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
+| addForType | IIngredientType<T>, Object, Component[] |  | void | ✘ |
 | addItem | Ingredient, Component[] |  | void | ✘ |
 | addFluid | Object, Component[] |  | void | ✘ |
-| addForType | IIngredientType<T>, Object, Component[] |  | void | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | cancel | Object |  | Object | ✘ |

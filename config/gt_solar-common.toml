@@ -9,9 +9,12 @@
 	#Output voltage per packet.
 	#Range: 0 ~ 9223372036854775807
 	output_voltage = 32
-	#Maximum output amperage per tick.
+	#Output amperage per tick in Base mode.
 	#Range: 0 ~ 9223372036854775807
-	output_amperage = 1
+	base_output_amperage = 1
+	#Output amperage per tick in Overdrive mode.
+	#Range: 0 ~ 9223372036854775807
+	overdrive_output_amperage = 2
 
 [solar_panel_mv]
 	#EU generated per tick when the panel is active.
@@ -23,9 +26,12 @@
 	#Output voltage per packet.
 	#Range: 0 ~ 9223372036854775807
 	output_voltage = 128
-	#Maximum output amperage per tick.
+	#Output amperage per tick in Base mode.
 	#Range: 0 ~ 9223372036854775807
-	output_amperage = 1
+	base_output_amperage = 1
+	#Output amperage per tick in Overdrive mode.
+	#Range: 0 ~ 9223372036854775807
+	overdrive_output_amperage = 2
 
 [solar_panel_hv]
 	#EU generated per tick when the panel is active.
@@ -37,9 +43,12 @@
 	#Output voltage per packet.
 	#Range: 0 ~ 9223372036854775807
 	output_voltage = 512
-	#Maximum output amperage per tick.
+	#Output amperage per tick in Base mode.
 	#Range: 0 ~ 9223372036854775807
-	output_amperage = 1
+	base_output_amperage = 1
+	#Output amperage per tick in Overdrive mode.
+	#Range: 0 ~ 9223372036854775807
+	overdrive_output_amperage = 2
 
 [solar_panel_ev]
 	#EU generated per tick when the panel is active.
@@ -51,9 +60,12 @@
 	#Output voltage per packet.
 	#Range: 0 ~ 9223372036854775807
 	output_voltage = 2048
-	#Maximum output amperage per tick.
+	#Output amperage per tick in Base mode.
 	#Range: 0 ~ 9223372036854775807
-	output_amperage = 1
+	base_output_amperage = 1
+	#Output amperage per tick in Overdrive mode.
+	#Range: 0 ~ 9223372036854775807
+	overdrive_output_amperage = 2
 
 [solar_panel_iv]
 	#EU generated per tick when the panel is active.
@@ -65,9 +77,12 @@
 	#Output voltage per packet.
 	#Range: 0 ~ 9223372036854775807
 	output_voltage = 8192
-	#Maximum output amperage per tick.
+	#Output amperage per tick in Base mode.
 	#Range: 0 ~ 9223372036854775807
-	output_amperage = 1
+	base_output_amperage = 1
+	#Output amperage per tick in Overdrive mode.
+	#Range: 0 ~ 9223372036854775807
+	overdrive_output_amperage = 2
 
 [solar_panel_luv]
 	#EU generated per tick when the panel is active.
@@ -79,9 +94,12 @@
 	#Output voltage per packet.
 	#Range: 0 ~ 9223372036854775807
 	output_voltage = 32768
-	#Maximum output amperage per tick.
+	#Output amperage per tick in Base mode.
 	#Range: 0 ~ 9223372036854775807
-	output_amperage = 1
+	base_output_amperage = 1
+	#Output amperage per tick in Overdrive mode.
+	#Range: 0 ~ 9223372036854775807
+	overdrive_output_amperage = 2
 
 [solar_panel_zpm]
 	#EU generated per tick when the panel is active.
@@ -93,9 +111,12 @@
 	#Output voltage per packet.
 	#Range: 0 ~ 9223372036854775807
 	output_voltage = 131072
-	#Maximum output amperage per tick.
+	#Output amperage per tick in Base mode.
 	#Range: 0 ~ 9223372036854775807
-	output_amperage = 1
+	base_output_amperage = 1
+	#Output amperage per tick in Overdrive mode.
+	#Range: 0 ~ 9223372036854775807
+	overdrive_output_amperage = 2
 
 [multipliers]
 	#Generation multiplier if any transparent block is above the panel.
@@ -196,4 +217,11 @@
 	default_biome = 1.0
 	#Per-biome generation multipliers in format namespace:path=value, e.g. minecraft:plains=1.0
 	biome_multiplier_overrides = ["minecraft:desert=1.10", "minecraft:badlands=1.10", "minecraft:eroded_badlands=1.10", "minecraft:wooded_badlands=1.10", "minecraft:jungle=0.90", "minecraft:bamboo_jungle=0.90", "minecraft:sparse_jungle=0.95", "minecraft:dark_forest=0.90", "minecraft:swamp=0.85", "minecraft:mangrove_swamp=0.85", "minecraft:snowy_plains=0.80", "minecraft:snowy_taiga=0.80", "minecraft:ice_spikes=0.80", "minecraft:frozen_peaks=0.80", "minecraft:jagged_peaks=0.85", "minecraft:stony_peaks=0.90", "minecraft:mushroom_fields=1.05"]
+
+[dimensions]
+	#Default generation multiplier for dimensions without an explicit override.
+	#Range: 0.0 ~ 10.0
+	default_multiplier = 0.0
+	#Per-dimension generation multipliers in format namespace:path=value. A value of 0 disables solar generation in that dimension. Modded dimensions are supported, e.g. mod_id:moon=1.25.
+	multiplier_overrides = ["minecraft:overworld=1.0", "minecraft:the_nether=0.0", "minecraft:the_end=0.0"]
 
